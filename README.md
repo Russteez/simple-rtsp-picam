@@ -1,5 +1,11 @@
 # simple-rtsp-picam
 
+# Download ffmpeg
+
+```
+sudo apt install ffmpeg -y
+```
+
 #Works with raspi that support 64bit/arm64
 # Download and install mediamtx
 ```
@@ -40,3 +46,13 @@ ffmpeg -f v4l2 \
 
 # Use the mediamtx.yml config for any device
 # Copy and put on the same directory that you download the mediamtx file
+
+# To start rtsp picam upon startup follow this step
+1. Create or copy the `start_stream.sh` file to you home directory or any directory
+2. Execute this command `sudo chmod +x /your-directory/start_stream.sh`
+3. Create new file on `/etc/systemd/system/stream.service`
+4. Create or copy the `stream.service` file on `/etc/systemd/system/stream.service`
+5. run this command 
+`sudo systemctl daemon-reload`
+`sudo systemctl enable stream.service`
+`sudo systemctl start stream.service`

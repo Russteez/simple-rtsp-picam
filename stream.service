@@ -1,0 +1,13 @@
+[Unit]
+Description=MediaMTX RTSP server
+After=network.target
+
+[Service]
+Type=simple
+User=raspi
+WorkingDirectory=/home/raspi
+ExecStart=/home/raspi/start_stream.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
