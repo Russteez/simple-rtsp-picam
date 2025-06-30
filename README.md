@@ -53,6 +53,8 @@ ffmpeg -f v4l2 \
 3. Create new file on `/etc/systemd/system/stream.service`
 4. Create or copy the `stream.service` file on `/etc/systemd/system/stream.service`
 5. run this command 
-`sudo systemctl daemon-reload`
-`sudo systemctl enable stream.service`
-`sudo systemctl start stream.service`
+```
+sudo systemctl daemon-reload
+sudo systemctl enable stream.service
+sudo systemctl start stream.service
+```
