@@ -6,7 +6,7 @@
 sudo apt install ffmpeg -y
 ```
 
-#Works with raspi that support 64bit/arm64
+#Works with raspi that support 64bit/arm64 (Tested on Raspberrypi 4)
 # Download and install mediamtx
 ```
 wget https://github.com/bluenviron/mediamtx/releases/download/v1.6.0/mediamtx_v1.6.0_linux_arm64v8.tar.gz
@@ -25,7 +25,7 @@ ffmpeg -f v4l2 \
        rtsp://localhost:8554/stream
 ```
 
-# For raspi that using 32bit/arm
+# For raspi that using 32bit/arm (Tested on Raspberrypi 2 model B v1.1)
 # Download and install mediamtx
 ```
 wget https://github.com/bluenviron/mediamtx/releases/download/v1.6.0/mediamtx_v1.6.0_linux_armv7.tar.gz
